@@ -73,9 +73,7 @@ button>a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px;
     background-color: #ffffff;
-    gap: 8px;
 }
 
 .logo-nav {
@@ -86,8 +84,8 @@ button>a {
 }
 
 .logo {
-    width: auto;
-    height: 100px;
+    width: 200px;
+    height: auto;
 }
 
 .list-nav {
@@ -103,7 +101,6 @@ button>a {
     margin: 0px;
     list-style: none;
     display: flex;
-    gap: 8px;
     width: 100%;
     height: 100%;
     justify-content: flex-end;
@@ -118,7 +115,16 @@ button>a {
 .li-enlace {
     text-decoration: none;
     color: #363636;
-    padding: 30px 10px 30px 10px;
+}
+
+.li-enlace:hover {
+    text-decoration: none;
+    color: #363636;
+}
+
+.nav-li:hover, a.li-enlace:hover {
+    color: #fff;
+    background-color: #0c5bdb;
 }
 
 /* Main*/
@@ -126,6 +132,9 @@ main {
     background-color: aqua;
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
 }
 
 /* Banner Querry*/
@@ -182,7 +191,7 @@ main {
         */
 
         body {
-            min-width: -webkit-fill-avilable;
+            min-width: 100%;
         }
 
     #querry-nav {
@@ -254,12 +263,55 @@ main {
     #example {
         background: green;
     }
+
+    #querry-nav {
+        flex-direction: column;
+    }
+
+    #banner-querry {
+        justify-content: center;
+    }
+
+    .inner-banner {
+        margin-left: 0px;
+        padding: 5%;
+    }
+
+    .list-nav {
+        width: 100%;
+    }
+
+    #ul-nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-li {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .li-enlace {
+        padding: 0px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 8px 2px 8px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #example {
         background: blue;
+    }
+    .li-enlace {
+        padding: 2px 8px 2px 8px;
+        width: 100%;
+        height: 50px;
     }
 }
 
@@ -268,6 +320,26 @@ main {
     #example {
         background: orange;
     }
+    #querry-nav {
+        flex-direction: row;
+    }
+
+    .list-nav {
+        flex: 4;
+        justify-content: flex-end;
+    }
+    
+    #ul-nav {
+        width: auto;
+    }
+
+    .inner-banner {
+        padding: 5%;
+    }
+
+    .li-enlace {
+        padding: 10px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -275,4 +347,17 @@ main {
     #example {
         background: pink;
     }
+
+    .nav-li {
+        grid-area: 0px;
+        width: auto;
+    }
+
+    .li-enlace {
+        height: 100%;
+        width: 100%;
+        align-content: center;
+        padding: 0px 8px 0px 8px;
+    }
+
 }
