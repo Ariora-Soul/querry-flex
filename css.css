@@ -164,7 +164,7 @@ main {
     line-break: strict;
 }
 
-/* Next Section */
+/* skills section */
 
 #example {
     background-color: purple;
@@ -172,6 +172,17 @@ main {
 }
 
 
+
+#skills-querry {
+    background-color: yellow;
+    padding: 2%
+}
+
+.skill-block {
+background-color: #232323;
+padding: 3%;
+border: 1px solid red;
+}
 /* Media Query Mobile*/
 
 
