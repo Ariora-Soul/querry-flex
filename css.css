@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    margin: 1px;
+    margin: 0px;
     padding: 0px;
     font-family: "poppins", sans-serif;
     max-width: 100vw;
@@ -122,7 +122,8 @@ button>a {
     color: #363636;
 }
 
-.nav-li:hover, a.li-enlace:hover {
+.nav-li:hover,
+a.li-enlace:hover {
     color: #fff;
     background-color: #0c5bdb;
 }
@@ -173,16 +174,61 @@ main {
 
 
 
+
 #skills-querry {
     background-color: yellow;
-    padding: 2%
+    padding: 5%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-block {
-background-color: #232323;
-padding: 3%;
-border: 1px solid red;
+    background-color: #232323;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 0px 20px 0px;
 }
+
+
+.icon-skill,
+.skill-title,
+.skill-description {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-skill {
+    background-color: #fff;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.icon-skill > i {
+    font-size: 1.3rem;
+}
+
+.skill-title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.skill-description {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0px 10px 0px 10px;
+}
+
+
+
 /* Media Query Mobile*/
 
 
@@ -201,9 +247,9 @@ border: 1px solid red;
     }
         */
 
-        body {
-            min-width: 100%;
-        }
+    body {
+        min-width: 100%;
+    }
 
     #querry-nav {
         flex-direction: column;
@@ -219,7 +265,7 @@ border: 1px solid red;
 
     .li-enlace {
         padding: 5px;
-        width: -webkit-fill-available;
+        width: 100%;
     }
 
     .list-nav {
@@ -250,7 +296,7 @@ border: 1px solid red;
     /* Banner max 600 */
 
 
-    #banner-querry{
+    #banner-querry {
         height: 400px;
     }
 
@@ -266,6 +312,17 @@ border: 1px solid red;
         font-size: 2rem;
         line-break: strict;
     }
+
+    /* Skills section */
+
+    #skills-querry {
+
+        flex-direction: column;
+    }
+
+
+
+
 
 }
 
@@ -319,6 +376,7 @@ border: 1px solid red;
     #example {
         background: blue;
     }
+
     .li-enlace {
         padding: 2px 8px 2px 8px;
         width: 100%;
@@ -331,6 +389,7 @@ border: 1px solid red;
     #example {
         background: orange;
     }
+
     #querry-nav {
         flex-direction: row;
     }
@@ -339,7 +398,7 @@ border: 1px solid red;
         flex: 4;
         justify-content: flex-end;
     }
-    
+
     #ul-nav {
         width: auto;
     }
