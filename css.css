@@ -179,7 +179,6 @@ main {
   justify-content: center;
   max-width: 100%;
   min-width: fit-content;
-
 }
 
 .skill-block {
@@ -229,12 +228,6 @@ main {
 }
 
 /* Information querry */
-
-
-#information-querry {
-    background-color: #0c5bdb;
-    padding: 5%;
-}
 
 /* Media Query Mobile*/
 
@@ -325,6 +318,39 @@ main {
 
   .skill-block {
     width: 100%;
+  }
+
+  /* Information querry section */
+
+  #information-querry {
+    padding: 5%;
+  }
+
+  .querry-solution {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .image-solution {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/about-circle.png);
+  }
+
+  .solution-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .solution-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -441,8 +467,6 @@ main {
   .skill-block {
     flex: 1;
   }
-
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
