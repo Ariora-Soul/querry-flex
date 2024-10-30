@@ -228,6 +228,14 @@ main {
   padding: 0px 30px 0px 30px;
 }
 
+/* Information querry */
+
+
+#information-querry {
+    background-color: #0c5bdb;
+    padding: 5%;
+}
+
 /* Media Query Mobile*/
 
 /* Extra small devices (phones, 600px and down) */
