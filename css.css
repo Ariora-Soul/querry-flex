@@ -342,6 +342,8 @@ main {
     align-items: center;
     justify-content: center;
     background-image: url(/images/about-circle.png);
+    background-size: cover;
+    animation: backwards;
   }
 
   .solution-image {
@@ -352,17 +354,21 @@ main {
   .solution-list {
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
 }
 
-/* Temporal css learning things  */
-
+/* Temporal css learning things  
 h2.solution-title {
   background: linear-gradient(to right, #232323 0%, #0c5bdb 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+}
+*/
+
+
+h2.solution-title {
+color: #0c5bdb;
 }
 
 p.solution-description {
@@ -372,19 +378,27 @@ p.solution-description {
 ul.solution-ul {
   margin: 0px;
   padding: 0px;
+  font-size: 1.1rem;
 }
-
 
 li.solution-list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  gap: 16px;
+}
+
+li.solution-list:hover {
+  color: #0c5bdb;
 }
 
 li.solution-list > a {
   color: #232323;
   text-decoration: none;
+}
+
+li.solution-list > a:hover {
+  color: #0c5bdb;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
