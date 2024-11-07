@@ -356,7 +356,6 @@ main {
   }
 
   /* Information querry section */
-
 }
 
 /* Temporal css learning things  
@@ -368,9 +367,8 @@ h2.solution-title {
 }
 */
 
-
 h2.solution-title {
-color: #0c5bdb;
+  color: #0c5bdb;
 }
 
 p.solution-description {
@@ -455,16 +453,17 @@ li.solution-list > a:hover {
 
   .skill-block {
     flex: 33%;
+    height: 200px;
   }
 
-  .solution-title, .solution-description {
+  .solution-title,
+  .solution-description {
     text-align: center;
-
   }
 
   ul.solution-ul {
     display: flex;
-    flex-direction:  row;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
@@ -493,6 +492,9 @@ li.solution-list > a:hover {
 
   .skill-block {
     flex: 33%;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
   }
 
   .image-solution {
@@ -502,9 +504,8 @@ li.solution-list > a:hover {
   }
   .solution-image {
     width: auto;
-    height: 500px
+    height: 500px;
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -549,14 +550,12 @@ li.solution-list > a:hover {
     flex-direction: row;
   }
 
-  .image-solution, .solution-list  {
+  .image-solution,
+  .solution-list {
     flex: 50%;
     align-items: center;
     justify-content: center;
-
   }
-
- 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
