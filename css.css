@@ -556,6 +556,11 @@ li.solution-list > a:hover {
     align-items: center;
     justify-content: center;
   }
+
+  li.solution-list {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -574,5 +579,22 @@ li.solution-list > a:hover {
     width: 100%;
     align-content: center;
     padding: 0px 8px 0px 8px;
+  }
+
+  .querry-solution {
+    width: 1140px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #information-querry {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p.solution-description {
+    font-size: 1.1rem;
   }
 }
