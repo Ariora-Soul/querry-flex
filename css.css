@@ -597,4 +597,14 @@ li.solution-list > a:hover {
   p.solution-description {
     font-size: 1.1rem;
   }
+  .solution-title, .solution-description {
+    text-align: left;
+  }
+  li.solution-list {
+    align-items: center;
+  }
+
+  #skills-querry {
+    padding-bottom: 0%;
+}
 }
