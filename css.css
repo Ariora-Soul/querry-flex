@@ -4,6 +4,7 @@ html {
   width: 100%;
   max-width: 100%;
   min-width: fit-content;
+  text-wrap: balance;
 }
 
 body {
@@ -27,6 +28,7 @@ h6 {
   margin: 0px;
   font-size: 35px;
   line-height: 40px;
+  text-wrap: wrap;
 }
 
 p {
@@ -45,7 +47,7 @@ button {
   border: none;
 }
 
-button > a {
+button>a {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
@@ -56,7 +58,7 @@ button > a {
   color: #232323 !important;
 }
 
-.buttom-banner > a {
+.buttom-banner>a {
   color: #232323 !important;
 }
 
@@ -211,7 +213,7 @@ main {
   color: #fff;
 }
 
-.icon-skill > i {
+.icon-skill>i {
   font-size: 1.3rem;
 }
 
@@ -226,6 +228,8 @@ main {
   margin: 0;
   padding: 0px 30px 0px 30px;
 }
+
+/* Information querry */
 
 #information-querry {
   padding: 5%;
@@ -260,12 +264,20 @@ main {
   flex-direction: column;
 }
 
+/* Soporte Section */
+
 #area-soporte {
-    padding: 5%;
-    background-color: #0c5bdb;
+  padding: 5%;
 }
 
-/* Information querry */
+.soporte-img-block {
+  width: 100%;
+}
+
+.soporteimg {
+  width: 100%;
+}
+
 
 /* Media Query Mobile*/
 
@@ -320,7 +332,7 @@ main {
     color: #fff;
   }
 
-  .nav-li:hover > a.li-enlace {
+  .nav-li:hover>a.li-enlace {
     transition: all 0.3s;
     color: #fff;
   }
@@ -397,12 +409,12 @@ li.solution-list:hover {
   color: #0c5bdb;
 }
 
-li.solution-list > a {
+li.solution-list>a {
   color: #232323;
   text-decoration: none;
 }
 
-li.solution-list > a:hover {
+li.solution-list>a:hover {
   color: #0c5bdb;
 }
 
@@ -507,6 +519,7 @@ li.solution-list > a:hover {
     height: 500px;
     background-size: contain;
   }
+
   .solution-image {
     width: auto;
     height: 500px;
@@ -602,14 +615,17 @@ li.solution-list > a:hover {
   p.solution-description {
     font-size: 1.1rem;
   }
-  .solution-title, .solution-description {
+
+  .solution-title,
+  .solution-description {
     text-align: left;
   }
+
   li.solution-list {
     align-items: center;
   }
 
   #skills-querry {
     padding-bottom: 0%;
-}
+  }
 }
