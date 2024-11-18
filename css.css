@@ -129,7 +129,7 @@ a.li-enlace:hover {
 
 /* Main*/
 main {
-  background-color: aqua;
+  background-color: #fff;
   margin: 0px;
   padding: 0px;
   max-width: 100%;
@@ -258,6 +258,11 @@ main {
 .solution-list {
   display: flex;
   flex-direction: column;
+}
+
+#area-soporte {
+    padding: 5%;
+    background-color: #0c5bdb;
 }
 
 /* Information querry */
