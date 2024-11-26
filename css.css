@@ -150,6 +150,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background-size: cover;
 }
 
 .inner-banner {
@@ -434,6 +435,10 @@ ul.soporte-list {
     width: 100%;
   }
 
+  #area-soporte {
+    padding: 5%;
+  }
+
   /* Information querry section */
 }
 
@@ -481,10 +486,6 @@ li.solution-list > a:hover {
 }
 
 /* Soporte*/
-
-#area-soporte {
-  padding: 5%;
-}
 
 .soporte-block {
   width: 100%;
@@ -678,6 +679,7 @@ li.solution-list > a:hover {
 
   .soporte-block {
     flex-direction: row;
+    max-width: 1140px;
   }
   .soporteimg {
     width: 100%;
@@ -734,7 +736,7 @@ li.solution-list > a:hover {
   }
 
   .soporteimg {
-    width: 50%;
+    width:100%;
     height: auto;
   }
 }
