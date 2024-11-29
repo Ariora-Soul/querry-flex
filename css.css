@@ -347,6 +347,64 @@ ul.soporte-list {
   color: #232323;
 }
 
+/* Years of Experience*/
+
+#years-zone {
+  padding: 5%;
+  background-color: #0c5bdb;
+  background-image: url(images/choose-us-bg.png);
+  max-width: 100%;
+  display: flex;
+  place-content: center;
+}
+
+.years-of-experience {
+  width: 1140px;
+}
+
+.year-content,
+.year-item {
+  display: flex;
+}
+
+.year-content {
+  flex-direction: column;
+  width: 700px;
+}
+
+.year-item {
+  font-size: 1.2rem;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.year-title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.year-info {
+  font-size: 1.1rem;
+}
+
+.year-btn {
+  background-color: #fff;
+  width: fit-content;
+  transition: all 0.3s;
+  color: #0c5bdb;
+  font-size: 1rem;
+  box-shadow: none;
+  box-shadow: 0px 0px 2px #fff;
+}
+
+.year-btn:hover {
+  background-color: #232323;
+  color: #fff;
+  box-shadow: 0px 0px 10px #232323;
+}
+
 /* Media Query Mobile*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -445,6 +503,19 @@ ul.soporte-list {
   #area-soporte {
     padding: 5%;
   }
+
+  /*Year */
+
+  .year-content, .years-of-experience {
+    width: 100%;
+    place-items: center;
+    text-align: center;
+  }
+
+  .year-title {
+    font-size: 1.8rem;
+  }
+
 }
 
 /* I put this here by error, meant to be fiext in the future */
