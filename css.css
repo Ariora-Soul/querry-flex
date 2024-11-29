@@ -297,26 +297,16 @@ ul.soporte-list {
   flex-direction: column;
   margin: 0px;
   padding: 0px;
+  padding-bottom: 20px;
 }
 
 .soporte-item,
 .list-item-download,
 .soporte-icon,
+.box-soporte,
 .soporte-decription-item,
 .soporte-enlace {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.box-soporte {
-  display: flex;
-  flex-direction: column;
-}
-
-.soporte-item {
-  flex-direction: row;
 }
 
 .soporte-icon {
@@ -326,6 +316,21 @@ ul.soporte-list {
   width: 45px;
   height: 45px;
   justify-content: center;
+}
+
+.list-item-download,
+.box-soporte {
+  align-items: center;
+}
+
+.box-soporte {
+  width: 100%;
+  flex-direction: column;
+}
+
+.soporte-decription-item,
+.soporte-enlace {
+  width: 100%;
 }
 
 .soporte-decription-item {
@@ -435,21 +440,14 @@ ul.soporte-list {
     width: 100%;
   }
 
+  /* Soporte */
+
   #area-soporte {
     padding: 5%;
   }
-
-  /* Information querry section */
 }
 
-/* Temporal css learning things  
-h2.solution-title {
-  background: linear-gradient(to right, #232323 0%, #0c5bdb 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
-}
-*/
+/* I put this here by error, meant to be fiext in the future */
 
 h2.solution-title {
   color: #0c5bdb;
@@ -495,23 +493,6 @@ li.solution-list > a:hover {
 .soporteimg {
   width: 100%;
   height: auto;
-}
-
-.soporte-icon {
-  flex: 20%;
-}
-
-.box-soporte {
-  flex: 80%;
-  width: 100%;
-}
-
-.soporte-item,
-.list-item-download,
-.soporte-icon,
-.soporte-decription-item,
-.soporte-enlace {
-  flex-wrap: nowrap;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -583,9 +564,18 @@ li.solution-list > a:hover {
   .solution-list {
     flex: 50%;
   }
+
+  #area-soporte {
+    padding: 5%;
+  }
+
+  .soporte-img-block {
+    width: 80%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
   #example {
     background: blue;
@@ -619,6 +609,9 @@ li.solution-list > a:hover {
   .solution-image {
     width: auto;
     height: 500px;
+  }
+  .soporte-img-block {
+    width: 70%;
   }
 }
 
@@ -675,7 +668,6 @@ li.solution-list > a:hover {
     align-items: flex-start;
     justify-content: flex-start;
   }
-
 
   .soporte-block {
     flex-direction: row;
@@ -736,7 +728,7 @@ li.solution-list > a:hover {
   }
 
   .soporteimg {
-    width:100%;
+    width: 100%;
     height: auto;
   }
 }
